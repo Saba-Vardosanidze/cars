@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "plusjakarta";
+  src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
+}
+:root {
+  --commentar: #90a3bf;
+  --buttonColor: #3563e9;
+  --cardBackground: #ffffff;
+  --websitecolor: #f5f5f5;
+  --buttonhover: #86a1f3;
+}
+body {
+  font-family: "plusjakarta";
+  background-color: var(--websitecolor);
+  display: flex;
+  justify-content: center;
+}
+main {
+  max-width: 1312px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.containerTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerTitleAndButton button {
+  all: unset;
+  color: var(--buttonColor);
+  font-weight: 600;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.containerTitleAndButton button:hover {
+  color: var(--buttonhover);
+}
+main .containerTitle {
+  color: var(--commentar);
+  font-weight: 600;
+  margin: 30px 0px 36px 20px;
+}
+.carRentContainer {
+  display: flex;
+  gap: 32px;
+}
+.card {
+  width: 304px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cardBackground);
+  border-radius: 10px;
+}
+.card .carNameHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.card .carName {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.card .carName h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.carNameHeader .carName p {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--commentar);
+}
+.card .carNameHeader {
+  width: 256px;
+  height: 48px;
+  margin: 24px auto;
+  margin-bottom: 62px;
+  display: flex;
+  align-items: center;
+}
+.carNameHeader img {
+  width: 24px;
+  height: 24px;
+}
+.card .carImages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 304px;
+  height: 99px;
+  position: relative;
+  margin-bottom: 39px;
+}
+.secondcarRentContainer .carPhoto {
+  width: 244px;
+  height: 100px;
+}
+.secondcarRentContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .shadow {
+  position: absolute;
+  bottom: 0;
+}
+.card .carInformation {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.carInformation .carDetailInformation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.carInformation .carDetailInformation p {
+  font-size: 14px;
+  color: var(--commentar);
+}
+.priceAndPurchase {
+  display: flex;
+  margin-top: 24px;
+  width: 256px;
+  height: 44px;
+  justify-content: space-between;
+  margin-left: 24px;
+  align-items: center;
+}
+.priceAndPurchase button {
+  padding: 10px 20px;
+  border: none;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: var(--buttonColor);
+  color: var(--cardBackground);
+  transition: 300ms;
+  cursor: pointer;
+}
+.priceAndPurchase button:hover {
+  background-color: var(--buttonhover);
+}
+.priceAndPurchase p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.priceAndPurchase span {
+  color: var(--commentar);
+  font-size: 14px;
+}
+.priceAndPurchase .oldPrice {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--commentar);
+  text-decoration: line-through;
+}
+.priceDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main .showMoreButton {
+  padding: 10px 20px;
+  width: 156px;
+  height: 44px;
+  margin: 64px auto;
+  background-color: var(--buttonColor);
+  border: none;
+  border-radius: 4px;
+  color: var(--cardBackground);
+  transition: 300ms;
+  cursor: pointer;
+}
+main .showMoreButton:hover {
+  background-color: var(--buttonhover);
+}
