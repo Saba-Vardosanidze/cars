@@ -1,7 +1,7 @@
 "use strict";
 
-const carListOneAPI = "https://67ae22f99e85da2f020c8b73.mockapi.io/carListOne";
-const carListTwoAPI = "https://67ae22f99e85da2f020c8b73.mockapi.io/carListTwo";
+const carListOneAPI = "https://67ae22f99e85da2f020c8b73.mockapi.io/car";
+const carListTwoAPI = "https://67b905fe51192bd378dc7719.mockapi.io/carTwo";
 
 function fetchCars(url, containerId) {
   fetch(url)
